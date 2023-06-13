@@ -1,0 +1,40 @@
+.registration-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  margin-right: 50px; /* Adjust the margin as needed */
+}
+
+.logo-image {
+  width: 500px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+mat-card {
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the card horizontally */
+  background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,0.5214460784313726) 0%, rgba(148,187,233,0.4990371148459384) 100%);
+}
+
+mat-form-field {
+  width: 500px;
+}

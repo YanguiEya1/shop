@@ -1,0 +1,220 @@
+{ 
+  "user": [
+    {
+      "id": "admin",
+      "name": "NT Infotech",
+      "password": "Test$1234",
+      "email": "test@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isactive": true,
+      "address": {
+        "area": "chennai"
+      }
+    },
+    {
+      "id": "testuser",
+      "name": "Test User",
+      "password": "Test@1234",
+      "email": "test@in.com",
+      "gender": "male",
+      "role": "vendor",
+      "isactive": true
+    },
+    {
+      "id": "Jhon1",
+      "name": "NT Infotech",
+      "password": "Test@1233",
+      "email": "te@in.com",
+      "gender": "male",
+      "role": "vendor",
+      "isactive": true
+    },
+    {
+      "id": "ntuser",
+      "name": "ramesh",
+      "password": "Test@1234",
+      "email": "te@in.com",
+      "gender": "male",
+      "role": "vendor",
+      "isactive": true,
+      "address": {
+        "area": "banglore"
+      }
+    },
+    {
+      "id": "youta",
+      "name": "Admin User",
+      "password": "Test$1234",
+      "email": "admon@in.com",
+      "gender": "male",
+      "role": "vendor",
+      "isactive": true
+    },
+    {
+      "id": "iyed",
+      "name": "iyed",
+      "password": "Test$1234",
+      "email": "iyed@gmail.com",
+      "gender": "male",
+      "role": "Vendor",
+      "isactive": true
+    },
+    {
+      "id": "yesmine",
+      "name": "yesmine",
+      "password": "Test$1234",
+      "email": "yesmine@gmail.com",
+      "gender": "female",
+      "role": "vendor",
+      "isactive": true
+    },
+    {
+      "id": "hdnfklrjglm",
+      "name": "bbb",
+      "password": "Test$1234",
+      "email": "bbb@i.com",
+      "gender": "male",
+      "role": "",
+      "isactive": false
+    },
+    {
+      "id": "eya",
+      "name": "eya",
+      "password": "Test$1234",
+      "email": "e@gmail.com",
+      "gender": "male",
+      "role": "Vendor",
+      "isactive": true
+    }
+  ],
+  "role": [
+    {
+      "code": "Admin",
+      "name": "Admin"
+    },
+    {
+      "code": "Vendor",
+      "name": "Vendor"
+    }
+  ],
+  "menu": [
+    {
+      "code": "user",
+      "name": "User"
+    },
+    {
+      "code": "customer",
+      "name": "Customer"
+    }
+  ],
+  "roleaccess": [
+    {
+      "role": "admin",
+      "menu": "user",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "admin",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "user",
+      "menu": "user",
+      "haveedit": false,
+      "haveadd": false,
+      "havedelete": false
+    },
+    {
+      "role": "user",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": false
+    }
+  ],
+  "customer": [
+    {
+      "id": 1,
+      "name": "rakhesh",
+      "Creditlimit": 1000
+    },
+    {
+      "id": 2,
+      "name": "rahul",
+      "Creditlimit": 1000
+    },
+    {
+      "id": 3,
+      "name": "ramesh",
+      "Creditlimit": 1000
+    },
+    {
+      "id": 4,
+      "name": "rahim",
+      "Creditlimit": 1000
+    },
+    {
+      "id": 5,
+      "name": "robert",
+      "Creditlimit": 1000
+    }
+  ],
+  "product": [
+    {
+      "producturl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/iPhone-SE-2022-Starlight-Back-in-Hand.jpg?resize=625%2C417&p=1",
+      "productname": "iphone",
+      "productprice": 2000,
+      "productcategory": "electronics",
+      "productid": "NT Infotech",
+      "productdescription": "nice quality",
+      "id": 1
+    },
+    {
+      "productid": "NT Infotech",
+      "productname": "laptop",
+      "productprice": 3000,
+      "productcategory": "electronics",
+      "producturl": "https://cdn.thewirecutter.com/wp-content/media/2022/10/laptopstopicpage-2048px-2102-2x1-1.jpg?auto=webp&quality=75&crop=2:1&width=980&dpr=1.5",
+      "productdescription": "suggestion",
+      "id": 2
+    },
+    {
+      "productid": "Test User",
+      "productname": "tshirt",
+      "productprice": 40,
+      "productcategory": "clothes",
+      "producturl": "https://celio.tn/media/catalog/product/t/-/t-shirt-col-rond-100-coton-noir-1100206-1-product_1.jpg",
+      "productdescription": "fashion",
+      "id": 3
+    },
+    {
+      "productid": "ramesh",
+      "productname": "dress",
+      "productprice": 100,
+      "productcategory": "clothes",
+      "producturl": "https://cdn.shopify.com/s/files/1/0095/9954/9540/products/Artboard5_8fe93ebe-f4aa-4efc-8544-dba6b0c07cfd_1200x1799.png?v=1679535772",
+      "productdescription": "beautiful",
+      "id": 4
+    }
+  ],
+  "order": [
+    {
+      "id": "order123",
+      "customer": "user123",
+      "total": 40,
+      "status": "pending"
+    },
+    {
+      "id": "order124",
+      "customer": "user124",
+      "total": 10,
+      "status": "delivered"
+    }
+  ]
+}

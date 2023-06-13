@@ -1,0 +1,9 @@
+{
+  "/api/user/*": "/user/$1",
+  "/api/role/*": "/role/$1",
+  "/api/menu/*": "/menu/$1",
+  "/api/roleaccess/*": "/roleaccess/$1",
+  "/api/customer/*": "/customer/$1",
+  "/api/product/*": "/product/$1",
+  "/api/order/*": "/order/$1"
+}

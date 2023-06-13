@@ -1,0 +1,33 @@
+.buttons {
+  margin-top: 4px;
+}
+
+.form-control {
+  padding: 10px;
+}
+
+.form-group {
+  padding: 3px;
+}
+
+.narrow-form {
+  max-width: 500px; /* Adjust the maximum width as per your needs */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+.narrow-form .form-group {
+  width: 100%; /* Set the width of the form group to 100% */
+}
+
+.narrow-form label {
+  width: 50%; /* Adjust the label width as needed */
+}
+
+.narrow-form input {
+  width: 90%; /* Adjust the input width as needed */
+}
+
+.narrow-form-container {
+  max-width: 700px; /* Adjust the maximum width as per your needs */
+  margin: 0 auto; /* Center the container horizontally */
+}

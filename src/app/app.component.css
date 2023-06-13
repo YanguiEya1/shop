@@ -1,0 +1,28 @@
+
+
+
+
+.toolbar a {
+  margin-right: 20px;
+
+}
+.toolbar {
+  background: rgb(211, 44, 86);
+
+}
+
+.toolbar a:last-child {
+  margin-right: 0;
+}
+
+.custom-sidenav {
+  background: rgb(204, 62, 97);
+}
+
+.custom-sidenav button {
+  color: white;
+}
+
+.custom-sidenav .mat-list-item-content {
+  color: white;
+}

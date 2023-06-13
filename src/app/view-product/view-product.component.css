@@ -1,0 +1,13 @@
+.fa-edit
+ {
+  color: orange;
+ }
+
+ .fa-trash
+ {
+  color: red;
+ }
+ .red-button {
+  background-color: red;
+  color: white;
+}

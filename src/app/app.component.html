@@ -1,0 +1,108 @@
+<style>
+
+  /* styles.css */
+
+
+
+/* Custom styles */
+.mat-sidenav-container {
+  height: 100vh;
+}
+
+.mat-sidenav {
+  width: 200px;
+}
+
+.mat-list-item {
+  cursor: pointer;
+}
+
+.mat-divider {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.toolbar {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+
+  color: white;
+  font-weight: 600;
+}
+
+.toolbar button {
+  margin-right: 8px;
+  color: white;
+}
+
+.toolbar span {
+  margin-left: 8px;
+}
+
+.content {
+  padding: 16px;
+}
+
+
+</style>
+
+<!-- Toolbar -->
+<!-- app.component.html -->
+<mat-sidenav-container>
+  <mat-sidenav mode="side" routerLinkActive="active" class="custom-sidenav">
+    <mat-nav-list>
+      <mat-list-item routerLink="/" routerLinkActive="active">
+        <mat-icon style="color: white;">dashboard</mat-icon>
+        <span  style="color: white;">Dashboard</span>
+      </mat-list-item>
+      <mat-list-item routerLink="/user" routerLinkActive="active" *ngIf="isadmin">
+        <mat-icon  style="color: white;">person</mat-icon>
+        <span  style="color: white;">Vendor</span>
+      </mat-list-item>
+      <mat-list-item routerLink="/view-products" routerLinkActive="active" *ngIf="isadmin">
+        <mat-icon  style="color: white;">shopping_cart</mat-icon>
+        <span  style="color: white;">Product</span>
+      </mat-list-item>
+      <mat-list-item routerLink="/vendor-products" routerLinkActive="active" *ngIf="isvendor">
+        <mat-icon  style="color: white;">shopping_cart</mat-icon>
+        <span  style="color: white;">Product</span>
+      </mat-list-item>
+      <mat-list-item routerLink="/customer" routerLinkActive="active">
+        <mat-icon  style="color: white;">people</mat-icon>
+        <span  style="color: white;">Customer</span>
+      </mat-list-item>
+    </mat-nav-list>
+    <mat-divider  style="color: white;"></mat-divider>
+    <mat-nav-list>
+      <mat-list-item routerLink="/login" (click)="logout()">
+        <mat-icon  style="color: white;">logout</mat-icon>
+        <span  style="color: white;">Logout</span>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="toolbar" role="banner" fxLayout="row" fxLayoutAlign="space-between center">
+      <div>
+      <button mat-icon-button (click)="sidenav.toggle()" *ngIf="isvendor || isadmin">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>ONLINE SHOP</span>
+    </div>
+      <div class="user-name" *ngIf="isLoggedIn && loggedInUserName">
+        Welcome, {{ loggedInUserName }}
+      </div>
+
+    </div>
+
+    <div class="content" role="main">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
+
+
+

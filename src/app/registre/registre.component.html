@@ -1,0 +1,40 @@
+<mat-card>
+  <mat-card-content>
+    <div class="registration-container">
+      <div class="logo-container">
+        <img src="https://img.freepik.com/free-vector/user-verification-unauthorized-access-prevention-private-account-authentication-cyber-security-people-entering-login-password-safety-measures_335657-3530.jpg?w=740&t=st%3D1682087756%7Eexp%3D1682088356%7Ehmac%3D85a61c7a0fdf72289e90e196123f17057dadf1de6e71a772c8cd323a03b24355" alt="Logo" class="logo-image">
+      </div>
+      <div class="form-container">
+        <h2>Registration</h2>
+        <form class="example-form" [formGroup]="registerform" (ngSubmit)="proceedregister()">
+          <div class="input-container">
+            <mat-form-field class="example-full-width">
+              <mat-label>Username</mat-label>
+              <input matInput formControlName="id">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <mat-label>Name</mat-label>
+              <input matInput formControlName="name">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <mat-label>Password</mat-label>
+              <input type="password" matInput formControlName="password">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <mat-label>Email</mat-label>
+              <input matInput formControlName="email">
+            </mat-form-field>
+          </div>
+          <mat-radio-group formControlName="gender" aria-label="Select an option">
+            <mat-radio-button value="male">Male</mat-radio-button>
+            <mat-radio-button value="female">Female</mat-radio-button>
+          </mat-radio-group>
+          <div class="button-container">
+            <button mat-raised-button color="primary">Submit</button>
+            <a routerLink="/login" mat-raised-button color="accent">Back to Login</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

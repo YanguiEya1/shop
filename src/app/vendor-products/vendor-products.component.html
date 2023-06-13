@@ -1,0 +1,32 @@
+<mat-card>
+  <mat-card-header>
+      <h2>User Listing</h2>
+  </mat-card-header>
+  <mat-card-content>
+      <div class="container-fluid">
+        <table class="table mt-4 table-striped table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Product image</th>
+              <th scope="col">Product name</th>
+              <th scope="col">Product price</th>
+              <th scope="col">Product category</th>
+              <th scope="col">Product description</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of filteredProducts">
+              <td><img style="width: 156px;height: 95px;" src="{{item.producturl}}"> </td>
+
+              <td>{{item.productname}}</td>
+              <td>{{item.productprice}}</td>
+              <td>{{item.productcategory}}</td>
+              <td>{{item.productdescription}}</td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </mat-card-content>
+</mat-card>
